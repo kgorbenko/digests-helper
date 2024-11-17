@@ -1,4 +1,4 @@
-﻿module DigestsMailHelper.EmlParser
+﻿module DigestsHelper.EmlParser
 
 open System.IO
 open System.Text.RegularExpressions

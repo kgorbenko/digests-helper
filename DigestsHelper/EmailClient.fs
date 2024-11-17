@@ -1,4 +1,4 @@
-﻿module DigestsMailHelper.EmailClient
+﻿module DigestsHelper.EmailClient
 
 open FSharp.Control
 open System.Threading

@@ -5,8 +5,8 @@ open Microsoft.Extensions.Configuration
 open System.Threading
 open System.Threading.Tasks
 
-open DigestsMailHelper.EmailClient
-open DigestsMailHelper.EmlParser
+open DigestsHelper.EmailClient
+open DigestsHelper.EmlParser
 open MimeKit
 
 type DigestDescriptor = {

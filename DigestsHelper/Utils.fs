@@ -1,4 +1,4 @@
-﻿module DigestsMailHelper.Utils
+﻿module DigestsHelper.Utils
 
 open System
 open System.Threading.Tasks
