@@ -87,11 +87,20 @@ digests
 
     messages
     |> Seq.iter (fun x ->
-        let linkName =
+        let issueNumberClause =
             x.IssueNumber
-            |> Option.map _.ToString()
-            |> Option.defaultValue x.Headline
+            |> Option.map (fun x -> $"(#{x})")
 
-        printfn $"- [ ] [#{linkName}]({x.IssueUrl})"
+        let linkText =
+            [
+                match issueNumberClause with
+                | Some x -> x
+                | None -> ()
+
+                x.Headline
+            ]
+            |> String.concat " - "
+
+        printfn $"- [ ] [{linkText}]({x.IssueUrl})"
     )
 )
